@@ -11,10 +11,9 @@ function Navbar() {
   return (
     <div className="flex justify-between items-center w-full pr-4 h-20 text-white bg-PrimaryColor ">
       <div className="flex items-center">
-      <a href="/home">
-
-        <img src={Logo} className="h-6 w-60 -mt-2 ml-8 xl:ml-24" alt="" />
-      </a>
+        <a href="/">
+          <img src={Logo} className="h-6 w-60 -mt-2 ml-8 xl:ml-24" alt="" />
+        </a>
       </div>
       <ul className="hidden md:flex uppercase gap-7 text-white mx-20">
         <li className="">
@@ -38,6 +37,8 @@ function Navbar() {
           </a>
         </li>
       </ul>
+
+      {/* Mobile menu */}
       <div
         onClick={toggleMenu}
         className="block mr-5  md:hidden items-center justify-between"
@@ -89,30 +90,24 @@ function Navbar() {
               </li>
               <li className=" pt-8">
                 <a href="/serv" className="pl-6 pt-8">
-                Services
+                  Services
                 </a>
               </li>
               <li className=" pt-8 whitespace-nowrap">
                 <a href="/" className="pl-6  pt-8 ">
-                About Us
+                  About Us
                 </a>
               </li>
               <li className=" pt-8  whitespace-nowrap">
                 <a href="/" className="pl-6  pt-8 whitespace-nowrap">
-                Contact Us
+                  Contact Us
                 </a>
               </li>
               <li className=" pt-8 ">
                 <a href="/" className="pl-6  pt-8">
-                Careers
+                  Careers
                 </a>
               </li>
-
-              {/* <li className="pl-6 py-4 pt-8">Home</li>
-              <li className="pl-6 py-4">Services</li>
-              <li className="pl-6 py-4 whitespace-nowrap">About Us</li>
-              <li className="pl-6 py-4 whitespace-nowrap">Contact Us</li>
-              <li className="pl-6 py-4">Careers</li> */}
             </ul>
             <div className="pr-8 p-6 text-3xl font-bold">
               <svg
@@ -133,6 +128,8 @@ function Navbar() {
           </div>
         </div>
       </div>
+      {/* end Mobile menu */}
+      
     </div>
   );
 }

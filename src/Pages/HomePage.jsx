@@ -15,6 +15,7 @@ export default function HomePage() {
       {/* hero section */}
       <div className="hero lg:mb-10 xl:-mb-0 2xl:-mb-40">
         <div className="w-full ">
+          {/* desktop version */}
           <div className="w-full lg:h-screen ">
             <div className="hidden lg:flex absolute md:w-1/2 w-5/12 p-5 xl:h-80 mb-5 text-white  flex-col justify-center mt-80 ml-20 bg-gradient-to-r from-green-400 to-blue-400">
               <h1 className="px-6 text-4xl sm:text-5xl md:text-5xl leading-10 font-bold ">
@@ -32,19 +33,23 @@ export default function HomePage() {
               alt=""
               className="lg:object-cover md:w-full "
             />
+            {/* end desktop version */}
+
+            {/* mobile version */}
             <div className="lg:hidden flex text-white flex-col justify-center bg-gradient-to-r from-green-400 to-blue-400">
-            <div className="m-5">
-              <h1 className="  text-4xl  leading-[48px] font-bold sm:w-11/12">
-                <span className="-5 capitalize">
-                  We crush your competitors, goals, and sales records - without
-                  the B.S.
-                </span>
-              </h1>
-              <div className=" pt-5">
-                <Button text="Get free consultation" />
+              <div className="m-5">
+                <h1 className="  text-4xl  leading-[48px] font-bold sm:w-11/12">
+                  <span className="-5 capitalize">
+                    We crush your competitors, goals, and sales records -
+                    without the B.S.
+                  </span>
+                </h1>
+                <div className=" pt-5">
+                  <Button text="Get free consultation" />
+                </div>
               </div>
             </div>
-            </div>
+            {/* end mobile version */}
           </div>
         </div>
       </div>
@@ -53,6 +58,7 @@ export default function HomePage() {
       {/* analytics section */}
       <div className="analytics flex items-center justify-center m-5">
         <div className="w-[1064px] px-4 sm:mx-5">
+          {/* Part 01 */}
           <div className="max-w-[1064px] mx-auto grid md:grid-cols-2 gap-8">
             <img
               className="md:w-[414px] md:h-[414px] w-[275px] h-[275px] mx-auto my-4 "
@@ -75,7 +81,12 @@ export default function HomePage() {
               <Button text="Learn more" />
             </div>
           </div>
+          {/* end Part 01 */}
+
+          {/* Part 02 */}
+
           <div className="max-w-[1240px] mx-auto grid md:grid-cols-2 gap-8">
+            {/* mobile version */}
             <div className="hidden md:flex flex-col justify-center my-auto">
               <h1 className="uppercase text-[27px]  leading-8 font-poppins text-PrimaryColor">
                 Digital Strategy Consulting
@@ -89,6 +100,8 @@ export default function HomePage() {
               </p>
               <Button text="Learn more" />
             </div>
+            {/* end mobile version */}
+
             <img
               className="md:w-[414px] md:h-[414px] w-[275px] h-[275px] mx-auto my-4"
               src={Image02}
@@ -96,7 +109,7 @@ export default function HomePage() {
             />
             <div className="flex md:hidden flex-col justify-center items-center justify-items-center">
               <p className="uppercase text-center text-[27px] leading-8 font-poppins text-PrimaryColor">
-              Digital Strategy Consulting
+                Digital Strategy Consulting
               </p>
               <p className="font-inter text-center text-base font-normal py-4">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic
@@ -107,6 +120,7 @@ export default function HomePage() {
               <Button text="Learn more" />
             </div>
           </div>
+          {/* end Part 02 */}
         </div>
       </div>
       {/* end analytics section */}

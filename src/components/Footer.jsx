@@ -8,7 +8,7 @@ function Footer() {
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 sm:gap-y-10 lg:grid-cols-4">
           <div className="sm:col-span-2 text-white lg:pl-10">
             <h1 className="max-w-lg text-xl font-semibold  text-white xl:text-2xl ">
-            <a href="/home">
+            <a href="/">
               <img src={Logo} alt="" className="" />
             </a>
             </h1>
