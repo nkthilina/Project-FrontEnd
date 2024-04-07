@@ -1,80 +1,3 @@
-// import React, { useState } from "react";
-// import Logo from '../assets/White Logo.png'
-
-// function Navbar() {
-//   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-//   const toggleMenu = () => {
-//     setIsMenuOpen(!isMenuOpen);
-//   };
-
-//   return (
-//     <div className="flex justify-between items-center w-full pr-4  h-[77px] text-gray-700 bg-blue-200">
-//       <div></div>
-//       <img src={Logo} className="h-[25px] w-[238.89px] items-start mr-4" alt="" />
-//       {/* <h1 className="w-full text-3xl">Navbar</h1> */}
-//       <ul className="hidden md:flex uppercase  gap-7">
-//         <li className="p-4">Services</li>
-//         <li className="p-4 whitespace-nowrap">About Us</li>
-//         <li className="p-4 whitespace-nowrap">Contact Us</li>
-//         <li className="p-4">Careers</li>
-//       </ul>
-//       <div onClick={toggleMenu} className="block md:hidden">
-//         {isMenuOpen ? (
-//           <svg
-//             xmlns="http://www.w3.org/2000/svg"
-//             fill="none"
-//             viewBox="0 0 24 24"
-//             stroke-width="1.5"
-//             stroke="currentColor"
-//             class="w-6 h-6"
-//           >
-//             <path
-//               stroke-linecap="round"
-//               stroke-linejoin="round"
-//               d="M6 18 18 6M6 6l12 12"
-//             />
-//           </svg>
-//         ) : (
-//           <svg
-//             xmlns="http://www.w3.org/2000/svg"
-//             fill="none"
-//             viewBox="0 0 24 24"
-//             stroke-width="1.5"
-//             stroke="currentColor"
-//             class="w-6 h-6"
-//           >
-//             <path
-//               stroke-linecap="round"
-//               stroke-linejoin="round"
-//               d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-//             />
-//           </svg>
-//         )}
-
-//         <div
-//           className={
-//             isMenuOpen
-//               ? "fixed left-0 top-0 w-[60%] h-full border-r border-gray-300 bg-gray-400 ease-in-out duration-500"
-//               : "fixed left-[-100%]"
-//           }
-//         >
-
-//           <h1 className="w-full text-3xl m-4 pt-4">Navbar</h1>
-//           <ul className="p-24 uppercase">
-//             <li className="p-4 ">Services</li>
-//             <li className="p-4 whitespace-nowrap">About Us</li>
-//             <li className="p-4 whitespace-nowrap">Contact Us</li>
-//             <li className="p-4 ">Careers</li>
-//           </ul>
-//         </div>
-//       </div>
-//     </div>
-//   );
-// }
-
-// export default Navbar;
-
 import React, { useState } from "react";
 import Logo from "../assets/White Logo.png";
 
@@ -86,19 +9,38 @@ function Navbar() {
   };
 
   return (
-    <div className="flex justify-between items-center w-full pr-4 h-20 text-gray-700 bg-PrimaryColor ">
+    <div className="flex justify-between items-center w-full pr-4 h-20 text-white bg-PrimaryColor ">
       <div className="flex items-center">
+      <a href="/home">
+
         <img src={Logo} className="h-6 w-60 -mt-2 ml-8 xl:ml-24" alt="" />
+      </a>
       </div>
       <ul className="hidden md:flex uppercase gap-7 text-white mx-20">
-        <li className="xl:p-4">Services</li>
-        <li className="xl:p-4 whitespace-nowrap">About Us</li>
-        <li className="xl:p-4 whitespace-nowrap">Contact Us</li>
-        <li className="xl:p-4">Careers</li>
+        <li className="">
+          <a href="/service" className="xl:p-4">
+            Services
+          </a>
+        </li>
+        <li className="">
+          <a href="/about" className="xl:p-4 whitespace-nowrap">
+            About Us
+          </a>
+        </li>
+        <li className="">
+          <a href="/contact" className="xl:p-4 whitespace-nowrap">
+            Contact Us
+          </a>
+        </li>
+        <li className="">
+          <a href="/career" className="xl:p-4">
+            Careers
+          </a>
+        </li>
       </ul>
       <div
         onClick={toggleMenu}
-        className="block pr-5  md:hidden items-center justify-between"
+        className="block mr-5  md:hidden items-center justify-between"
       >
         {isMenuOpen ? (
           <svg
@@ -139,12 +81,38 @@ function Navbar() {
           }
         >
           <div className="flex justify-between">
-            <ul className="font-inter text-sm font-medium uppercase">
-              <li className="pl-6 py-4 pt-8">Home</li>
+            <ul className="font-inter text-sm font-medium uppercase text-black">
+              <li className="  pt-8">
+                <a href="/home" className="pl-6 pt-8">
+                  Home
+                </a>
+              </li>
+              <li className=" pt-8">
+                <a href="/serv" className="pl-6 pt-8">
+                Services
+                </a>
+              </li>
+              <li className=" pt-8 whitespace-nowrap">
+                <a href="/" className="pl-6  pt-8 ">
+                About Us
+                </a>
+              </li>
+              <li className=" pt-8  whitespace-nowrap">
+                <a href="/" className="pl-6  pt-8 whitespace-nowrap">
+                Contact Us
+                </a>
+              </li>
+              <li className=" pt-8 ">
+                <a href="/" className="pl-6  pt-8">
+                Careers
+                </a>
+              </li>
+
+              {/* <li className="pl-6 py-4 pt-8">Home</li>
               <li className="pl-6 py-4">Services</li>
               <li className="pl-6 py-4 whitespace-nowrap">About Us</li>
               <li className="pl-6 py-4 whitespace-nowrap">Contact Us</li>
-              <li className="pl-6 py-4">Careers</li>
+              <li className="pl-6 py-4">Careers</li> */}
             </ul>
             <div className="pr-8 p-6 text-3xl font-bold">
               <svg

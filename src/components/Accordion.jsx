@@ -3,9 +3,9 @@ import React, { useState } from "react";
 function Accordion({ title, answer }) {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <div className="flex items-center justify-center">
+    <div className="flex items-center justify-center text-pretty">
       <div className="bg-AccordionBg my-2 p-5">
-        <div className="p- gap-10">
+        <div className=" ">
           <button
             onClick={() => setIsOpen(!isOpen)}
             className="flex justify-between w-full font-inter font-medium text-[22px] leading-[28px] text-black"
@@ -15,7 +15,7 @@ function Accordion({ title, answer }) {
                 isOpen ? "text-PrimaryColor" : "text-black"
               }`}
             >
-              <div className="">{title}</div>
+              <div className="text-left">{title}</div>
             </div>
             {/* <span>{title}</span> */}
             {isOpen ? (
@@ -26,7 +26,7 @@ function Accordion({ title, answer }) {
                   viewBox="0 0 24 24"
                   strokeWidth="1.5"
                   stroke="currentColor"
-                  className="w-3.5 h-3.5 text-PrimaryColor"
+                  className="w-3.5 h-3.5 mt-2 md:mt-1 text-PrimaryColor"
                 >
                   <path strokeLinecap="round" strokeLinejoin="round" d="M5 12h14" />
                 </svg>
@@ -39,7 +39,7 @@ function Accordion({ title, answer }) {
                   viewBox="0 0 24 24"
                   strokeWidth="1.5"
                   stroke="currentColor"
-                  className="w-3.5 h-3.5"
+                  className="w-3.5 h-3.5 mt-2 md:mt-1"
                 >
                   <path strokeLinecap="round" strokeLinejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
                 </svg>

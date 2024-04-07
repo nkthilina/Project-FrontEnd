@@ -1,11 +1,12 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function Button({text}) {
   return (
     <div>
-        <button className="bg-SecondaryColor text-[#5651e5] w-auto rounded-md font-medium  
+        <button className="bg-SecondaryColor  w-auto rounded-md font-medium  
          p-3">
-            <span className="text-white uppercase whitespace-nowrap">{text}</span>
+            <Link to="/" className="text-white uppercase whitespace-nowrap">{text}</Link>
         </button>
     </div>
   )
