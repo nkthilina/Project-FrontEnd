@@ -20,7 +20,8 @@ module.exports = {
         AccentColor02: '#FFF8E0',
         ErrorColor: '#FF0335',
         SuccessColor: '#5EB30B',
-        AccordionExpand: '#6F6C90'
+        AccordionExpand: '#6F6C90',
+        AccordionBg: '#FAF8FF'
       },
       fontFamily: {
         'inter': ['Inter', 'sans-serif'],
